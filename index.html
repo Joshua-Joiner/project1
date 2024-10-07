@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">
+<head>
+  <title>Join Our Project</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
+  <link rel="stylesheet" href="css/meyersreset-and-normalize-form.css"/>
+  <link rel="stylesheet" href="css/screen.css"/>
+</head>
+<body>
+
+  <h1>Join Our Community Project</h1>
+  
+  <p>Sign up to be part of our exciting open-source community, software beta test, or email list. Be the first to get updates!</p>
+
+  <form action="/submit" method="post" autocomplete="on">
+    
+    <!-- Name -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+    <!-- Select project interest -->
+    <label for="interest">Which project would you like to join?</label>
+    <select id="interest" name="interest" required>
+      <option value="">Choose one...</option>
+      <option value="email-list">Email List</option>
+      <option value="beta-test">Software Beta Test</option>
+      <option value="open-source">Open-Source Community</option>
+    </select>
+
+    <!-- Submit Button -->
+    <button type="submit">Join Now</button>
+  </form>
+
+</body>
+</html>
