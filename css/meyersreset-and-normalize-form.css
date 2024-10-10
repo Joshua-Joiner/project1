@@ -70,9 +70,11 @@ button, select {
 
 /* Remove the vendor prefix and use standardized properties */
 
-/* Appearance */
-button, [type="button"], [type="reset"], [type="submit"] {
-  appearance: button; /* Use the non-prefixed appearance property */
+/* Use standardized appearance property values */
+button {
+  appearance: none; /* Standard non-prefixed appearance */
+  -webkit-appearance: none; /* Prefix for WebKit browsers */
+  -moz-appearance: none; /* Prefix for Firefox browsers */
 }
 
 /* Focus inner pseudo-element: consider using the standard outline property */
