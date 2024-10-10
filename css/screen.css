@@ -2,7 +2,7 @@
 :root {
   --primary-color: #6200EE;  /* Material Design Purple */
   --secondary-color: #03DAC6; /* Material Design Teal */
-  --background-color: #F5F5F5;
+  --background-color: ##87CEEB;
   --text-color: #333;
   --button-text-color: #fff;
   --button-hover-color: #3700B3; /* Darker Purple */
