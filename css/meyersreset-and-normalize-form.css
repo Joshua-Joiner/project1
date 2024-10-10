@@ -68,28 +68,41 @@ button, select {
   text-transform: none;
 }
 
+/* Remove the vendor prefix and use standardized properties */
+
+/* Appearance */
 button, [type="button"], [type="reset"], [type="submit"] {
-  -webkit-appearance: button;
+  appearance: button; /* Use the non-prefixed appearance property */
 }
 
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+/* Focus inner pseudo-element: consider using the standard outline property */
+button:focus-visible, 
+[type="button"]:focus-visible, 
+[type="reset"]:focus-visible, 
+[type="submit"]:focus-visible {
+  outline: 1px dotted ButtonText;
+  /* Avoid using the vendor-prefixed ::-moz-focus-inner */
+  padding: 0; /* Ensure padding reset if needed */
 }
 
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+/* Focus ring without Mozilla-specific prefix */
+button:focus-visible, 
+[type="button"]:focus-visible, 
+[type="reset"]:focus-visible, 
+[type="submit"]:focus-visible {
   outline: 1px dotted ButtonText;
 }
 
+/* Remove overflow:hidden, auto handles all overflows */
 textarea {
   overflow: auto;
 }
+
+/* Optional: Maintain fallback for older browsers if needed */
+/* button, [type="button"], [type="reset"], [type="submit"] {
+   -webkit-appearance: button; (Keep this if supporting very old webkit browsers)
+} */
+
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
