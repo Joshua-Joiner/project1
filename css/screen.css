@@ -6,7 +6,7 @@
   --text-color: #333;
   --button-text-color: #fff;
   --button-hover-color: #3700B3; /* Darker Purple */
-  --font-primary: 'Roboto', sans-serif;
+  --font-primary: 'Roboto', Arial, sans-serif;
 }
 
 * {
@@ -90,19 +90,27 @@ footer {
 @media (min-width: 600px) {
   body {
     padding: 2rem;
+    background-color: #e0f7fa; /* Lighter teal background */
   }
 
   main {
     max-width: 600px;
     padding: 2rem;
+    border: 2px solid #333; /* Adding a border */
   }
 
   h1 {
     font-size: 2rem;
+    color: #004d40; /* Darker teal */
+  }
+
+  p {
+    font-size: 1.1rem;
   }
 
   button {
     font-size: 1.4rem;
+    padding: 0.8rem; /* Larger padding */
   }
 }
 
@@ -110,18 +118,28 @@ footer {
 @media (min-width: 900px) {
   body {
     padding: 3rem;
+    background-color: #e8eaf6; /* Light blue background */
   }
 
   main {
     max-width: 800px;
     padding: 3rem;
+    border: 3px solid #000; /* Adding a thicker border */
   }
 
   h1 {
     font-size: 2.5rem;
+    color: #1a237e; /* Darker purple */
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #444;
   }
 
   button {
     font-size: 1.6rem;
+    padding: 1rem; /* Larger padding */
+    background-color: #512da8; /* Different button color */
   }
 }
